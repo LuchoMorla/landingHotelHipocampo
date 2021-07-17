@@ -1,0 +1,118 @@
+/* color Azul Marino: #003D7C
+    Color dorado: #C9AA14
+    color dorado teñido: #7D6906
+    colro Cafe rojo y ocuro: #C95414
+    color verde bosque #014421
+    Color verde GREENERY: #88b04b
+    Celetes 1 #1E72C9 Azul complemetario #0C437D combina con dorado #821EC9 morado tal y el ultimo morado es #49007D
+    celeste 2 #137D7B y el otro celeste más claro que le complementa #0AC9C6 Morado que combine #7D1F67 su dorado oscuro y un amarillo dorado #C9AB14
+    Combinacion que más me gusto es la siguiente:
+    #06407D Azul, parecido al marino
+    #C93D32 Naranja medio rojoso medio tomate
+    #1E72C9 Celeste complementario
+    #B1C90A verde claro
+    #6F7D0C Verde oscuro
+    */
+:root {
+    --color-primario: #1E72C9;
+    --color-naranjarojisa: #C93D32;
+    --color-azul: #06407D;
+    --color-verdeclaro: #B1C90A;
+    --color-verdeoscuro: #6f7d0c;
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    font-size: 62.5%;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo__text {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+    color: white;
+    position:relative;
+    left: -10px;
+}
+.logo__imagen {
+    width: 50px;
+    height: 50px;
+    margin-top: 8px;
+}
+.logo__container {
+    height: 51px;
+    text-align: left;
+    display: inline-flex;
+    align-items: center;
+}
+header {
+    background-color: var(--color-azul);
+    justify-content: space-between;
+    height: 60px;
+    font-size: 2rem;
+    display:inline-flex;
+    width: 100%;
+}
+.nav__container {
+    position: relative;
+    align-items: center;
+    padding: 1px;
+    margin-top: 16px;
+}
+.user {
+    width: 80px;
+    height: 80px; 
+}
+.user:hover {
+        transform: rotate(-10deg);
+}
+.nav__container--listas {
+    list-style: none;
+    display:flex;
+}
+.nav {
+    color: var(--color-verdeclaro);
+    align-items: center;
+    font-size: 2rem;
+    text-decoration: none;
+    justify-content: center;
+    display:flex;
+    margin: 0px 20px;
+}
+.nav:hover {
+    border: solid var(--color-naranjarojisa);
+    border-radius: 15px;
+    padding: 3px;
+    color: var(--color-naranjarojisa);
+}
+.nav:active {
+    border: solid var(--color-primario);
+    border-radius: 15px;
+    padding: 3px;
+    color: var(--color-primario);
+    background-color: aquamarine;
+}
+main {
+    background: linear-gradient(to bottom, #defff5 0%, var(--color-primario) 80%, var(--color-azul) 100%);
+    height: 700px;
+    font-size: 1.5rem;
+}
+.fotoEntrada {
+    width: 50%;
+    height: 350px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+figure, figcaption {
+    font-size: 1rem;
+}
+footer, li, p {
+    background-color: var(--color-azul);
+    width: 100%;
+    height: 30px;
+    border: transparent;
+    font-size: 1.5rem;
+}
